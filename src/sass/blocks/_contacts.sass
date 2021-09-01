@@ -24,15 +24,7 @@
     &__input   
         margin-top: 45px   
         position: relative
-        &::before
-                position: absolute
-                content: ''
-                width: 8px
-                height: 2px
-                background: #A7A7A7
-                top: 65%
-                transition: all 0.5s
-        input
+        &-field
             background: none
             border: none
             border-bottom: 1px solid #FFFFFF
@@ -41,6 +33,9 @@
             outline: none
             color: #fff
             padding-left: 10px
+            &:focus
+                &+label
+                    transform: translateY(-1.5rem)
         label
             position: absolute
             left: 18px
@@ -50,6 +45,15 @@
             font-size: 14px
             font-weight: 200
             margin: 0
+            transition: 0.3s all
+            &::before
+                position: absolute
+                content: ''
+                width: 8px
+                height: 2px
+                background: #A7A7A7
+                top: 65%
+                left: -15px
     &__btn
         font-size: 11px
         text-align: center
