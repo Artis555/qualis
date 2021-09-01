@@ -1,0 +1,39 @@
+.title
+    font-size: 64px
+    color: #ffffff
+    text-align: center
+    text-transform: uppercase
+    letter-spacing: 12px
+    &-black 
+        color: #343434
+    &-small_white
+        font-size: 24px
+        position: relative
+        margin-top: 50px
+        &::before, &::after
+            content: ""
+            position: absolute
+            width: 329px
+            height: 4px
+            top: 17px
+            background-color: #fff
+        &::before
+            left: 154px
+        &::after
+            right: 170px
+    &-small_black
+        font-size: 24px
+        position: relative
+        margin-top: 50px
+        color: #000
+        &::before, &::after
+            content: ""
+            position: absolute
+            width: 329px
+            height: 4px
+            top: 17px
+            background-color: #000
+        &::before
+            left: 105px
+        &::after
+            right: 120px
